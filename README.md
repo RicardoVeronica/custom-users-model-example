@@ -1,0 +1,2 @@
+# custom-example
+Django project
