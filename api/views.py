@@ -9,3 +9,11 @@ class UserAPIView(generics.ListAPIView):
     """
     queryset = User.objects.all()
     serializer_class = UserSerializer
+
+
+class DetailUser(generics.RetrieveAPIView):
+    """
+    Retrieve detail of an users
+    """
+    queryset = User.objects.all()
+    serializer_class = UserSerializer

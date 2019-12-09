@@ -53,6 +53,12 @@ INSTALLED_APPS.extend([
 
 AUTH_USER_MODEL = 'users.User'
 
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny'
+    ],
+}
+
 # To see the settings that have been applied, use the Django diffsettings
 # management command.
 # See https://docs.divio.com/en/latest/how-to/configure-settings.html#list
