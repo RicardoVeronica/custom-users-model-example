@@ -3,7 +3,7 @@ from rest_framework import generics
 from users.models import User
 
 
-class UserAPIView(generics.ListAPIView):
+class UserList(generics.ListAPIView):
     """
     Retrive a full list of users
     """
@@ -11,9 +11,17 @@ class UserAPIView(generics.ListAPIView):
     serializer_class = UserSerializer
 
 
-class DetailUser(generics.RetrieveAPIView):
+class UserListCreate(generics.ListCreateAPIView):
     """
-    Retrieve detail of an users
+    pass
     """
     queryset = User.objects.all()
     serializer_class = UserSerializer
+
+
+# class DetailUser(generics.RetrieveAPIView):
+#     """
+#     Retrieve detail of an users
+#     """
+#     queryset = User.objects.all()
+#     serializer_class = UserSerializer
