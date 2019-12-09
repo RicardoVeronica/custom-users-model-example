@@ -43,7 +43,11 @@ aldryn_addons.settings.load(locals())
 # for guidance on managing these settings.
 
 INSTALLED_APPS.extend([
+    # local
     'users.apps.UsersConfig',
+
+    # 3rd party
+    'rest_framework',
 ])
 
 AUTH_USER_MODEL = 'users.User'
