@@ -6,6 +6,7 @@ import aldryn_addons.urls
 
 urlpatterns = [
     path('', include('users.urls')),
+    path('api/v1/', include('api.urls')),
 ] + aldryn_addons.urls.patterns() + i18n_patterns(
     # add your own i18n patterns here
     *aldryn_addons.urls.i18n_patterns()  # MUST be the last entry!

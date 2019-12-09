@@ -45,6 +45,7 @@ aldryn_addons.settings.load(locals())
 INSTALLED_APPS.extend([
     # local
     'users.apps.UsersConfig',
+    'api.apps.ApiConfig',
 
     # 3rd party
     'rest_framework',
